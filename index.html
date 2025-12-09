@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>God's Royal Nation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="website icon" type="png" href="GRN logo.png">
+
+<style>
+     .text-glow {
+    text-shadow: 0 0 12px rgba(0, 0, 0, 0.55);
+  }
+
+  @keyframes slider {
+    0%, 33% {
+      background-image: url('Day.jpg');
+    }
+    34%, 66% {
+      background-image: url('Day2.jpg');
+    }
+    67%, 100% {
+      background-image: url('GRN image.jpg');
+    }
+    
+  }
+  
+  .fade-up {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  }
+  .scroll-animate {
+    transform: translateY(20px);
+  }
+</style>
+
+</head>
+<body>
+    
+   <div class="body">
+
+  <!-- NAVBAR -->
+<div class="section bg-blue-900 px-6 md:px-7">
+
+  <div class="flex items-center justify-between py-4">
+
+    <!-- Logo + Name -->
+    <div class="flex items-center space-x-2">
+      <img src="GRN logo.png" class="w-10 md:w-12" alt="Logo">
+      <h2 class="font-serif text-yellow-300 font-bold text-lg md:text-xl">
+        Gods Royal Nation
+      </h2>
+    </div>
+
+    <!-- Hamburger -->
+    <button id="menu-btn" class="md:hidden focus:outline-none text-yellow-300">
+      <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2"
+        viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round"
+          d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+
+    <!-- Desktop Nav -->
+    <ul class="hidden md:flex text-yellow-300 text-sm md:text-base font-medium space-x-10">
+      <li><a href="index.html" class="border-b-2 border-yellow-300">Home</a></li>
+      <li><a href="about.html" class="border-b-2 border-transparent hover:border-yellow-300">About GRN</a></li>
+      <li><a href="founder.html" class="border-b-2 border-transparent hover:border-yellow-300">Founder</a></li>
+      <li><a href="contact.html" class="border-b-2 border-transparent hover:border-yellow-300">Contact Us</a></li>
+    </ul>
+
+  </div>
+
+  <!-- Mobile Dropdown Menu -->
+  <ul id="menu"
+    class="hidden flex-col md:hidden text-yellow-300 text-sm font-medium space-y-4 pb-4">
+    <li><a href="index.html" class="border-b-2 border-yellow-300">Home</a></li>
+    <li><a href="about.html" class="border-b-2 border-transparent hover:border-yellow-300">About GRN</a></li>
+    <li><a href="founder.html" class="border-b-2 border-transparent hover:border-yellow-300">Founder</a></li>
+    <li><a href="contact.html" class="border-b-2 border-transparent hover:border-yellow-300">Contact Us</a></li>
+  </ul>
+
+</div>
+
+
+
+  <!-- WELCOME SECTION -->
+<div class="welcome relative flex flex-col items-center justify-center text-center 
+     h-[87vh] md:h-[80vh] bg-cover bg-center transition-all duration-1000"
+     id="welcome-section"
+     style="background-image: url('Day.jpg');">
+
+  <!-- Indigo overlay -->
+  <div class="absolute inset-0 bg-indigo-900 bg-opacity-25"></div>
+
+  <h1 class="font-serif text-yellow-300 text-4xl md:text-6xl mb-4 mt-10 text-glow font-bold leading-tight md:leading-snug">
+      Welcome Home to God's <br> Royal Nation
+  </h1>
+
+  <p class="font-sans text-white text-base md:text-xl mb-6 mt-5 font-medium text-glow px-4 md:px-0">
+      We're Blessed To Be A Blessing, We're Royal, We're Global...
+  </p>
+
+  <a href="stream.html"
+     class="relative z-10 font-sans text-white font-bold mt-5
+           bg-blue-800 px-6 py-2 rounded
+           transition duration-300 
+           hover:bg-blue-900 hover:border-yellow-200 hover:text-white">
+     Join Our Service Today
+  </a>
+
+</div>
+
+  <!-- PURPOSE SECTION -->
+  <section class="bg-[#F7F3EA] py-12 md:py-16 px-6 md:px-10">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 items-center">
+
+      <!-- PURPOSE -->
+      <div class="scroll-animate text-center md:text-left">
+        <h1 class="text-2xl md:text-3xl font-serif font-bold text-blue-900 flex items-center justify-center md:justify-start gap-3 mb-2">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 md:w-6 md:h-6 text-blue-900" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M7 1h2v14H7zM1 7h14v2H1z"/>
+          </svg>
+          Our Purpose
+        </h1>
+
+        <p class="text-blue-900 mt-2 md:mt-3 leading-relaxed text-sm md:text-base px-2 md:px-0">
+          To put an end to all form of enslavements and call men out of Darkness 
+          into God's Marvelous Light through the Light of God's word and the 
+          manifestations of the Holy Ghost and Power.
+        </p>
+
+        <a href="about.html" 
+           class="inline-block mt-4 md:mt-6 bg-blue-900 text-white px-5 py-2 md:px-6 md:py-3 rounded-md shadow
+                  transform transition-transform duration-300 hover:-translate-y-1 hover:scale-105">
+           Learn More About Us
+        </a>
+      </div>
+
+      <!-- CENTER IMAGE -->
+      <div class="flex justify-center scroll-animate">
+        <img 
+          src="GRN founder.png" 
+          alt="Founder"
+          class="w-36 h-36 md:w-48 md:h-48 rounded-full bg-slate-800 border-4 border-[#D6B87E] shadow-lg object-cover
+                 transform transition-transform duration-500 hover:scale-105"
+        >
+      </div>
+
+      <!-- VISIONARY -->
+      <div class="scroll-animate text-center md:text-left mt-6 md:mt-0">
+        <h1 class="text-2xl md:text-3xl font-serif font-bold text-blue-900">The Visionary</h1>
+
+        <p class="text-lg md:text-xl font-semibold text-blue-900 mt-1 md:mt-2">
+          Apostle T.P Edwards
+        </p>
+
+        <p class="text-blue-900 mt-2 md:mt-3 leading-relaxed text-sm md:text-base px-2 md:px-0">
+          "A man called to bring men out of bondage of the devil by the light 
+          of God's word and the manifestation of The Holy Spirit."
+        </p>
+
+        <a href="founder.html"
+           class="inline-block mt-4 md:mt-6 bg-blue-900 text-white px-5 py-2 md:px-6 md:py-3 rounded-md shadow
+                  transform transition-transform duration-300 hover:-translate-y-1 hover:scale-105">
+           Meet the Founder
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+</div>
+
+
+<section class="bg-[#1F2A44] text-white py-16 px-6">
+    <div class="max-w-7xl mx-auto">
+
+        <!-- Heading -->
+        <h1 class="text-center text-4xl font-serif font-bold text-[#D9B96E] mb-12">
+            Connect With Us
+        </h1>
+
+        <!-- Accordion -->
+        <div class="space-y-6">
+
+            <!-- ADDRESS -->
+            <div class="bg-[#243356] p-5 rounded-lg">
+                <button onclick="toggleAccordion('address')" 
+                    class="w-full flex justify-between items-center font-semibold text-lg">
+                    <span>📍 Address</span>
+                    <span id="address-arrow">▼</span>
+                </button>
+
+                <div id="address" class="hidden mt-3 text-gray-200">
+                    NiniOlowo Plaza, Ikere Ekiti
+                </div>
+            </div>
+
+            <!-- SERVICE TIME -->
+            <div class="bg-[#243356] p-5 rounded-lg">
+                <button onclick="toggleAccordion('service')" 
+                    class="w-full flex justify-between items-center font-semibold text-lg">
+                    <span>⏰ Service Time</span>
+                    <span id="service-arrow">▼</span>
+                </button>
+
+                <div id="service" class="hidden mt-3 text-gray-200">
+                    Sunday Service — 8:00 AM <br>
+                    Word Feast (Tuesday) — 5:00 PM
+                </div>
+            </div>
+
+            <!-- EMAIL -->
+            <div class="bg-[#243356] p-5 rounded-lg">
+                <button onclick="toggleAccordion('email')" 
+                    class="w-full flex justify-between items-center font-semibold text-lg">
+                    <span>✉️ Email</span>
+                    <span id="email-arrow">▼</span>
+                </button>
+
+                <div id="email" class="hidden mt-3 text-gray-200">
+                    michealcoentrepreneur@gmail.com
+                </div>
+            </div>
+
+            <!-- LOCATE BRANCH -->
+            <div class="bg-[#243356] p-5 rounded-lg">
+                <button onclick="toggleAccordion('branch')" 
+                    class="w-full flex justify-between items-center font-semibold text-lg">
+                    <span>📍 Locate the Branch</span>
+                    <span id="branch-arrow">▼</span>
+                </button>
+
+                <div id="branch" class="hidden mt-3 text-gray-200">
+                    Akungba <br>
+                    BOUSETI Campus, Ikere Ekiti <br>
+                    Ibafo, Lagos/Ogun State
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<footer class="bg-white text-blue-900 font-bold text-center py-4">
+    &copy; <span id="year"></span> God's Royal Nation
+</footer>
+
+
+
+
+
+   
+
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  const scrollElements = document.querySelectorAll(".scroll-animate");
+
+  const elementInView = (el, dividend = 1) => {
+    const elementTop = el.getBoundingClientRect().top;
+    return elementTop <= (window.innerHeight || document.documentElement.clientHeight) / dividend;
+  };
+
+  const displayScrollElement = (element) => {
+    element.classList.add("fade-up");
+  };
+
+  const handleScrollAnimation = () => {
+    scrollElements.forEach((el, index) => {
+      if(elementInView(el, 1.25)){
+        setTimeout(() => { displayScrollElement(el); }, index * 200); // stagger 200ms
+      }
+    })
+  }
+
+  window.addEventListener("scroll", handleScrollAnimation);
+  window.addEventListener("load", handleScrollAnimation); // also trigger on load
+
+   const welcome = document.getElementById('welcome-section');
+  const backgrounds = ['Day.jpg', 'Day2.jpg', 'GRN image.jpg'];
+  let index = 0;
+
+  function changeBackground() {
+    welcome.style.backgroundImage = `url('${backgrounds[index]}')`;
+    index = (index + 1) % backgrounds.length;
+  }
+
+  // Change background every 4 seconds
+  changeBackground(); // set initial
+  setInterval(changeBackground, 4000);
+
+
+
+ function toggleAccordion(id) {
+    let section = document.getElementById(id);
+    let arrow = document.getElementById(id + "-arrow");
+
+    if (section.classList.contains("hidden")) {
+        section.classList.remove("hidden");
+        arrow.textContent = "▲";
+    } else {
+        section.classList.add("hidden");
+        arrow.textContent = "▼";
+    }
+}
+
+    const currentYear = new Date().getFullYear();
+
+    // If your site started in 2023 and you want a range:
+    const startYear = 2023;
+    const yearText = (currentYear === startYear) ? startYear : `${startYear}–${currentYear}`;
+
+    // Insert into the page
+    document.getElementById('year').textContent = yearText;
+
+   const btn = document.getElementById('menu-btn');
+  const menu = document.getElementById('menu');
+
+  btn.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+  });
+</script>
+
+</body>
+</html>

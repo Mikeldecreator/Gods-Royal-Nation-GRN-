@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - God's Royal Nation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="website icon" type="png" href="GRN logo.png">
+
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                'royal-indigo': 'blue-900', 
+                'accent-gold': 'yellow-300', 
+              },
+              fontFamily: {
+                 'serif': ['Cormorant Garamond', 'serif'],
+                 'sans': ['Open Sans', 'sans-serif'],
+              }
+            }
+          }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    
+    </head>
+
+<body class="font-sans bg-gray-50 text-gray-800">
+
+<!-- Header -->
+<header class="bg-blue-900 text-yellow-300 p-2 md:p-4 flex justify-between items-center shadow-lg">
+    <div class="flex items-center space-x-3">
+        <img src="GRN logo.png" class="w-10 md:w-12 h-auto" alt="Logo">
+        <div class="font-serif text-2xl sm:text-2xl md:text-3xl font-bold text-yellow-300">God's Royal Nation</div>
+    </div>
+    <nav>
+        <button id="menu-toggle" class="md:hidden text-yellow-300 p-2 focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                 xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+        </button>
+
+        <ul id="menu-links"
+            class="flex flex-col md:flex-row justify-center md:justify-end text-xs sm:text-sm md:text-base font-medium text-yellow-300 space-y-2 md:space-y-0 md:space-x-10 hidden md:flex">
+            <li><a href="index.html"
+                   class="border-b-2 border-transparent hover:border-yellow-300 transition-all duration-300 block">Home</a>
+            </li>
+            <li><a href="about.html"
+                   class="border-b-2 border-transparent hover:border-yellow-300 transition-all duration-300 block">About
+                    GRN</a></li>
+            <li><a href="founder.html"
+                   class="border-b-2 border-transparent hover:border-yellow-300 transition-all duration-300 block">Founder</a>
+            </li>
+            <li><a href="contact.html"
+                   class="border-b-2 border-yellow-300 block">Contact Us</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Hero Section -->
+<div class="relative py-12 md:py-16">
+
+    <!-- Background image + overlay -->
+    <div class="absolute inset-0 z-0">
+        <img src="Contact.jpg" alt="Background" class="w-full h-full object-cover">
+        <div class="absolute inset-0 bg-indigo-900/50"></div>
+    </div>
+
+    <!-- Content -->
+    <main class="relative z-10 max-w-6xl mx-auto px-4">
+
+        <!-- Heading -->
+        <section class="text-center mb-12">
+            <h1 class="font-serif text-3xl sm:text-4xl md:text-6xl font-bold text-white mb-4">
+                Connect With God's Royal Nation
+            </h1>
+            <p class="text-base sm:text-lg md:text-xl text-gray-200">
+                We are excited to hear from you. Reach out to us through any of the channels below.
+            </p>
+            <div class="h-1 w-20 bg-yellow-300 mx-auto mt-4"></div>
+        </section>
+
+        <!-- Grid Section -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12">
+
+            <!-- Contact Form -->
+           <div class="bg-white p-6 md:p-8 rounded-xl shadow-lg border-t-4 border-blue-900">
+    <h2 class="font-serif text-2xl sm:text-3xl font-bold text-blue-900 mb-6">Send Us a Message</h2>
+    <form id="contact-form" action="https://formspree.io/f/xyzrdvyr" method="POST" class="space-y-4">
+        <input type="text" name="name" placeholder="Your Name" class="w-full p-3 border border-gray-300 rounded focus:border-yellow-300 focus:ring focus:ring-yellow-300/50" required>
+        <input type="email" name="email" placeholder="Your Email" class="w-full p-3 border border-gray-300 rounded focus:border-yellow-300 focus:ring focus:ring-yellow-300/50" required>
+        <textarea name="message" placeholder="Your Message or Prayer Request" rows="5" class="w-full p-3 border border-gray-300 rounded focus:border-yellow-300 focus:ring focus:ring-yellow-300/50" required></textarea>
+        <button type="submit" class="w-full py-3 bg-blue-900 text-white font-semibold rounded-lg hover:bg-blue-800 transition duration-300 shadow-md">
+            Submit Request
+        </button>
+    </form>
+    <p id="form-status" class="mt-2 text-green-600 hidden">Your message has been sent!</p>
+</div>
+            <!-- Contact Info & Map -->
+            <div class="space-y-10">
+
+                <!-- Location & Times -->
+                <div class="p-6 md:p-8 bg-white rounded-xl shadow-lg border-b-4 border-yellow-300">
+                    <h2 class="font-serif text-2xl sm:text-3xl font-bold text-blue-900 mb-4">Church Location & Times</h2>
+                    <div class="space-y-3 text-sm sm:text-base">
+                        <p class="font-bold"><span class="text-yellow-300 mr-2">📍</span> Address: NiniOwo Plaza, Ikere
+                            Ekiti</p>
+                        <p class="font-bold"><span class="text-yellow-300 mr-2">📞</span> Phone: +234 708 566 8941</p>
+                        <p class="font-bold"><span class="text-yellow-300 mr-2">📧</span> Email: michealcoentrepreneur@gmail.com
+                        </p>
+                        <p class="font-bold"><span class="text-yellow-300 mr-2">⏱</span> Service Time: Sunday Worship at
+                            08:00 AM</p>
+                    </div>
+                    <div class="mt-4 h-48 md:h-64 rounded overflow-hidden">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3939.3746296506446!2d5.2214!3d7.4975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1037921f2e2239e3%3A0x3e97df7ac52acae7!2sIkere-Ekiti%2C%20Ekiti%20State!5e0!3m2!1sen!2sng!4v1700000000000!5m2!1sen!2sng"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+
+                <!-- Social Links -->
+                <div class="p-6 md:p-8 bg-blue-900 text-white rounded-xl shadow-lg">
+                    <h2 class="font-serif text-2xl sm:text-3xl font-bold text-yellow-300 mb-6 text-center">
+                        Connect with Apostle TP Edwards
+                    </h2>
+                    <div class="flex flex-wrap justify-center gap-4 md:gap-6">
+
+                        <!-- Facebook -->
+                        <a href="https://web.facebook.com/profile.php?id=100073397917756" target="_blank"
+                           class="flex items-center px-4 py-2 space-x-2 text-white hover:text-yellow-300 transition duration-300 rounded bg-blue-700 hover:bg-blue-800">
+                            <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                                <path
+                                    d="M22.675 0h-21.35C.597 0 0 .597 0 1.326v21.348C0 23.403.597 
+                                         24 1.326 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 
+                                         1.893-4.788 4.659-4.788 1.325 0 2.464.099 2.795.143v3.24l-1.918.001c-1.504 
+                                         0-1.795.715-1.795 1.763v2.314h3.587l-.467 3.622h-3.12V24h6.116C23.403 
+                                         24 24 23.403 24 22.674V1.326C24 .597 23.403 0 22.675 0z"/>
+                            </svg>
+                            <span class="font-semibold leading-none">Edward Timothy</span>
+                        </a>
+
+                        <!-- WhatsApp -->
+                        <a href="https://wa.me/2347085668941" target="_blank"
+                           class="flex items-center px-4 py-2 space-x-2 text-white hover:text-yellow-300 transition duration-300 rounded bg-green-600 hover:bg-green-700">
+                            <svg class="w-6 h-6 fill-current" viewBox="0 0 32 32">
+                                <path
+                                    d="M16.001 3.2c-7.067 0-12.8 5.733-12.8 
+                                         12.8 0 2.258.589 4.44 1.706 6.36L3.2 28.8l6.6-1.673c1.84.997 
+                                         3.92 1.52 6.2 1.52 7.067 0 12.8-5.733 12.8-12.8s-5.733-12.8-12.8-12.8z"/>
+                            </svg>
+                            <span class="font-semibold leading-none">WhatsApp (Message)</span>
+                        </a>
+
+                        <!-- Instagram -->
+                        <a href="https://www.instagram.com/tpedward" target="_blank"
+                           class="flex items-center px-4 py-2 space-x-2 text-white hover:text-yellow-300 transition duration-300 rounded bg-pink-500 hover:bg-pink-600">
+                            <svg class="w-6 h-6 fill-current" viewBox="0 0 448 512">
+                                <path
+                                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9S160.5 370.9 224.1 370.9 339 319.6 339 256 287.7 141 224.1 141zm0 189.6c-41.2 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.5 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.9-26.9 26.9s-26.9-12-26.9-26.9 12-26.9 26.9-26.9 26.9 12 26.9 26.9zm76.1 27.2c-.1-54.9-4.9-103.7-56.5-155.3S334.5 0 279.6 0H168.4C113.5 0 64.7 4.8 13.1 56.4S0 148.7 0 203.6v111.2c0 54.9 4.8 103.7 56.4 155.3s100.4 56.5 155.3 56.5h111.2c54.9 0 103.7-4.8 155.3-56.4s56.5-100.4 56.5-155.3V168.4zm-48.3 200.2c-7.8 19.6-22.9 34.7-42.5 42.5-29.4 11.7-99.3 9-132.8 9s-103.4 2.6-132.8-9c-19.6-7.8-34.7-22.9-42.5-42.5-11.7-29.4-9-99.3-9-132.8s-2.6-103.4 9-132.8c7.8-19.6 22.9-34.7 42.5-42.5 29.4-11.7 99.3-9 132.8-9s103.4-2.6 132.8 9c19.6 7.8 34.7 22.9 42.5 42.5 11.7 29.4 9 99.3 9 132.8s2.7 103.4-9 132.8z"/>
+                            </svg>
+                            <span class="font-semibold leading-none">@TPEDWARD</span>
+                        </a>
+
+                        <!-- TikTok -->
+                        <a href="https://www.tiktok.com/@t.pedward" target="_blank"
+                           class="flex items-center px-4 py-2 space-x-2 text-white hover:text-yellow-300 transition duration-300 rounded bg-black hover:bg-gray-800">
+                            <svg class="w-6 h-6 fill-current" viewBox="0 0 448 512">
+                                <path
+                                    d="M448,209.9c-16.2,7.4-33.7,12.1-52.1,14.1V90.3h-76.2c0,0,0,111.1,0,133.6c0,73.7-59.8,133.5-133.5,133.5
+                                    c-73.7,0-133.5-59.8-133.5-133.5S112.5,90.3,186.2,90.3c10.8,0,21.3,1.4,31.4,4.1v76.1c-9.6-2.8-19.8-4.4-30.4-4.4
+                                    c-41.4,0-75,33.6-75,75s33.6,75,75,75c37.3,0,68.1-27.2,73.8-63.7c2.2,0.2,4.5,0.3,6.7,0.3c37.3,0,67.5-30.2,67.5-67.5V0h76.2
+                                    C419.5,42.3,448,122.7,448,209.9z"/>
+                            </svg>
+                            <span class="font-semibold leading-none">@ApostleTP</span>
+                        </a>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+</div>
+
+<!-- Footer -->
+<footer class="bg-white text-blue-900 font-bold text-center py-4 text-sm sm:text-base md:text-base">
+    &copy; <span id="year"></span> God's Royal Nation
+</footer>
+
+
+
+</body>
+</html>
+
+
+<script>
+     function toggleAccordion(id) {
+    let section = document.getElementById(id);
+    let arrow = document.getElementById(id + "-arrow");
+
+    if (section.classList.contains("hidden")) {
+        section.classList.remove("hidden");
+        arrow.textContent = "▲";
+    } else {
+        section.classList.add("hidden");
+        arrow.textContent = "▼";
+    }
+}
+
+    const currentYear = new Date().getFullYear();
+
+    // If your site started in 2023 and you want a range:
+    const startYear = 2023;
+    const yearText = (currentYear === startYear) ? startYear : `${startYear}–${currentYear}`;
+
+    // Insert into the page
+    document.getElementById('year').textContent = yearText;
+
+
+    document.addEventListener('DOMContentLoaded', function() {
+    // Get the button and the link list elements
+    const menuToggle = document.getElementById('menu-toggle');
+    const menuLinks = document.getElementById('menu-links');
+
+    if (menuToggle && menuLinks) {
+        // Add a click event listener to the button
+        menuToggle.addEventListener('click', function() {
+            // Toggle the 'hidden' class on the menu links list
+            // This is how Tailwind CSS controls visibility
+            menuLinks.classList.toggle('hidden');
+        });
+    }
+});
+
+
+   const form = document.getElementById('contact-form');
+    const status = document.getElementById('form-status');
+
+    form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+
+        const formData = new FormData(form);
+
+        // Validate email
+        const email = formData.get('email');
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailPattern.test(email)) {
+            alert('Please enter a valid email address.');
+            return;
+        }
+
+        // Send data via fetch
+        const response = await fetch(form.action, {
+            method: form.method,
+            body: formData,
+            headers: { 'Accept': 'application/json' }
+        });
+
+        if (response.ok) {
+            status.classList.remove('hidden');
+            form.reset();
+        } else {
+            alert('Oops! There was a problem sending your message.');
+        }
+    });
+</script>
